@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!-- saved from url=(0092)file:///Users/bytdance/Desktop/MT%E5%AD%97%E7%AC%A6%E8%BD%AC%E6%8D%A2%E5%B7%A5%E5%85%B72.htm -->
+<html data-bs-theme="light"><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>MT字符转换工具</title>
+    <link rel="shortcut icon" href="https://mt.qqqvq.com/img/favicon.ico">
+    <meta name="color-scheme" content="light dark">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="keywords" content="美团,美团字符,美团转换工具,美团字符转换工具,MT字符转换工具">
+    <meta name="description" content="美团字符转换工具是一款帮助大家快速转换字符格式化代码的工具">
+    <script src="./daydaymoney_files/hm.js"></script><script src="./daydaymoney_files/hm(1).js"></script><script src="./daydaymoney_files/hm(2).js"></script><script src="./daydaymoney_files/jquery.min.js"></script>
+    <script src="./daydaymoney_files/autodrak.js"></script>
+    <script src="./daydaymoney_files/bootstrap.bundle.js"></script>
+    <link href="./daydaymoney_files/bootstrap.min.css" rel="stylesheet">
+    <script charset="UTF-8" id="LA_COLLECT" src="./daydaymoney_files/js-sdk-pro.min.js"></script>
+    <script>LA.init({id:"JuFXDHBtSVpHC23n",ck:"JuFXDHBtSVpHC23n"})</script>
+    <script>//百度统计
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?4a4a152dba75c691e221289cb4f3a0a8";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <style type="text/css" media="all">
+        li {
+            float: left;
+            border-left: 1px solid #bbb;
+        }
+        li a:hover:not(.active) {
+            background-color: #FFC300;
+        }
+        .navbar-brand{
+            margin-left:10px;
+            margin-right:10px;
+        }
+        .navbar{
+            --bs-navbar-padding-x: 0 0 0 0;
+        }
+    </style>
+    <!-- Start of Howxm client code snippet -->
+
+    <!-- End of Howxm client code snippet -->
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <a class="navbar-brand" href="https://mt.qqqvq.com/index.php"><img src="https://mt.qqqvq.com/img/logo.png" style="width:30px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="https://mt.qqqvq.com/index.php">行列转换 <img src="https://mt.qqqvq.com/img/hot.gif"></a></li>
+                <li class="nav-item"><a class="nav-link" href="https://mt.qqqvq.com/clearn.php">文本净化</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://mt.qqqvq.com/city.php">省份城市</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://mt.qqqvq.com/md5.php">MD5加密</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://mt.qqqvq.com/fenge.php">订单分割</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://mt.qqqvq.com/like.php">模糊匹配</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://mt.qqqvq.com/about.php">关于本站</a></li>
+                <!--<li class="nav-item"><a class="nav-link text-body" >还有-19969天</a></li> <img src="/img/new.gif" />-->
+            </ul>
+        </div> 
+    </nav>
+    <br>
+    <script>
+    document.oncontextmenu = new Function("event.returnValue=false;"); //禁止右键功能
+        let idx = 0;
+        jQuery(document).ready(function ($) {
+            $("body").click(function (e) {
+                const a = ["以客户", "为中心", "正直", "诚信", "合作", "共赢", "追求", "卓越"];
+                const $i = $("<span/>").text(a[idx]);
+                idx = (idx + 1) % a.length;
+                const x = e.pageX, y = e.pageY;
+                $i.css({
+                    "z-index": 999999,
+                    "top": y - 20,
+                    "left": x,
+                    "position": "absolute",
+                    "font-weight": "bold",
+                    "color": "#FFC300"
+                });
+                $("body").append($i);
+                $i.animate({ "top": y - 180, "opacity": 0 }, 1500, function () {
+                    $i.remove();
+                });
+            });
+        });
+    </script>
+
+
+
+
+
+
+    <script>
+        function clean() {
+            document.getElementById('input').value = "";
+            document.getElementById('output').innerHTML = "";
+            document.getElementById('input').focus();
+        }
+        function fun1() {
+            var data = document.getElementById('input').value
+            if (data == "") {
+                alert("输入框不得为空！");
+                document.getElementById('input').focus();
+                return false;
+            }
+            else {
+                data = data.replace(/\n/g, ",");
+                // 去掉因为最后一个回车造成的逗号
+                data = data.replace(/,$/g, '');
+                document.getElementById('output').innerHTML = data;
+                document.getElementById('output').focus();
+            }
+        }
+        function fun2() {
+            var data = document.getElementById('input').value
+            if (data == "") {
+                alert("输入框不得为空！");
+                document.getElementById('input').focus();
+                return false;
+            }
+            else {
+                data = data.replace(/\n/g, "','");
+                // 去掉因为最后一个回车造成的引号
+                data = data.replace(/','$/g, '');
+                document.getElementById('output').innerHTML = "'" + data + "'";
+                document.getElementById('output').focus();
+            }
+        }
+        function fun3() {
+            var data = document.getElementById('input').value
+            if (data == "") {
+                alert("输入框不得为空！");
+                document.getElementById('input').focus();
+                return false;
+            }
+            else {
+                data = data.replace(/\n/g, "、");
+                // 去掉因为最后一个回车造成的逗号
+                data = data.replace(/、$/g, '');
+                document.getElementById('output').innerHTML = data;
+                document.getElementById('output').focus();
+            }
+        }
+        function fun4() {
+            var data = document.getElementById('input').value
+            if (data == "") {
+                alert("输入框不得为空！");
+                document.getElementById('input').focus();
+                return false;
+            }
+            else {
+                data = data.replace(/\n/g," ");
+                document.getElementById('output').innerHTML = data;
+                document.getElementById('output').focus();
+            }
+        }
+    </script>
+    <style>
+        
+    </style>
+
+
+    <div class="container">
+        
+
+
+
+
+
+
+<!--    <div class="alert alert-danger alert-dismissible fade show">-->
+<!--        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>-->
+<!--        🎉 祝本站的各位女神，节日快乐，天天开心,早日成为白富美！🌹-->
+<!--    </div>-->
+<!--</body>-->
+        <div class="container-fluid">
+            <h2>行列转换：由回车换行，转为逗号/引号等相隔</h2>
+            <div class="row">
+                <div class="col-md p-1">
+                    <textarea class="form-control" rows="20" id="input" name="text" placeholder="输入框...
+支持从Excel直接粘贴
+例：
+张三
+李四
+王五
+赵六
+燕小七" autofocus=""></textarea>
+                </div>
+                <div class="col-md-1 p-1 " align="center">
+                    <br>
+                    <button onclick="fun1()" type="button" class="btn btn-success">逗&nbsp;&nbsp;号</button><br><br>
+                    <button onclick="fun2()" type="button" class="btn btn-success">引&nbsp;&nbsp;号</button><br><br>
+                    <button onclick="fun3()" type="button" class="btn btn-success">顿&nbsp;&nbsp;号</button><br><br>
+                    <button onclick="fun4()" type="button" class="btn btn-success">空&nbsp;&nbsp;格</button><br><br>
+                    <button onclick="clean()" type="button" class="btn btn-danger">清&nbsp;&nbsp;空</button>
+                </div>
+                <div class="col-md p-1">
+                    <textarea class="form-control" rows="20" id="output" name="text" placeholder="输出框...
+点击可自动全选结果" readonly="" onclick="this.focus();this.select()"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+
+
+
+
+
+
+
+
+    <style type="text/css" media="all">
+         @media screen and (max-width:768px) {/*小屏：屏幕最大宽度768*/
+            
+        }
+        @media screen and (min-width:769px) {/*大屏：屏幕最小宽度769*/
+            .banquan {
+                position: fixed;
+                bottom: 10px;
+            }
+        }
+        
+        .banquan a {
+            color: #696969;
+            font-size: 13px;
+            padding-left: 10px;
+          	text-decoration:none;
+        }
+        .zhanweifu{
+        width: 100%;
+	    height: 10px;
+      }
+    </style>
+
+
+    <div class="zhanweifu"><!-- 占位符 --></div>
+    <div class="zhanweifu"><!-- 占位符 --></div>
+    <div class="banquan"><a href="http://beian.miit.gov.cn/" target="_blank">©ICP备15008183号-10 </a><script id="LA-DATA-WIDGET" crossorigin="anonymous" charset="UTF-8" src="./daydaymoney_files/quote.js"></script><span class="la-widget la-data-widget__container" style="box-sizing: border-box !important; margin: 0px !important; font-size: 12px !important; line-height: 1.71428em !important; color: rgb(51, 51, 51) !important;"><span style="box-sizing: border-box !important; margin: 0px !important; font-size: 12px !important; line-height: 1.71428em !important; color: rgb(51, 51, 51) !important; border-left: none !important; padding-left: 0px !important;"><span style="box-sizing: border-box !important; margin: 0px !important; font-size: 12px !important; line-height: 1.71428em !important; color: rgb(153, 153, 153) !important; display: inline-block !important;">今日访问量</span><span style="box-sizing: border-box !important; margin: 0px 0px 0px 6px !important; font-size: 12px !important; line-height: 1.71428em !important; color: rgb(51, 51, 51) !important; font-weight: bold !important;">1,472</span></span><span style="box-sizing: border-box !important; margin: 0px 0px 0px 6px !important; font-size: 12px !important; line-height: 1.71428em !important; color: rgb(51, 51, 51) !important; border-left: 1px solid rgb(255, 162, 51) !important; padding-left: 6px !important;"><span style="box-sizing: border-box !important; margin: 0px !important; font-size: 12px !important; line-height: 1.71428em !important; color: rgb(153, 153, 153) !important; display: inline-block !important;">本月访问量</span><span style="box-sizing: border-box !important; margin: 0px 0px 0px 6px !important; font-size: 12px !important; line-height: 1.71428em !important; color: rgb(51, 51, 51) !important; font-weight: bold !important;">6,644</span></span></span></div>
+    <div class="zhanweifu"><!-- 占位符 --></div>
+
+</body></html>
